@@ -1,0 +1,71 @@
+.aws-iot-message-display {
+  padding: 1rem;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.aws-iot-message-display h3 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.message-item {
+  background: var(--card-bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.message-item:last-child {
+  margin-bottom: 0;
+}
+
+.message-item p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.message-item p:first-child {
+  margin-top: 0;
+}
+
+.message-item p:last-child {
+  margin-bottom: 0;
+}
+
+.message-item strong {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+/* Scrollbar styling */
+.message-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message-list::-webkit-scrollbar-track {
+  background: var(--card-bg-secondary);
+  border-radius: 3px;
+}
+
+.message-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.message-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
