@@ -25,9 +25,9 @@ const initializeAWSIoT = (io) => {
     // Initialize IoT Device SDK for subscribing
     if (process.env.AWS_IOT_ENDPOINT && process.env.AWS_IOT_THING_NAME) {
       iotDevice = AWSIoTData.device({
-        keyPath: 'd:/mtandt/webdashboard/aws_certificate/763d836c18927e59bebd8cf25f966fe43b7ad7e6a1ed469efec374b2d1fb3b56-private.pem.key',
-        certPath: 'd:/mtandt/webdashboard/aws_certificate/763d836c18927e59bebd8cf25f966fe43b7ad7e6a1ed469efec374b2d1fb3b56-certificate.pem.crt',
-        caPath: 'd:/mtandt/webdashboard/aws_certificate/AmazonRootCA1.pem',
+        keyPath: './aws_certificate/763d836c18927e59bebd8cf25f966fe43b7ad7e6a1ed469efec374b2d1fb3b56-private.pem.key',
+        certPath: './aws_certificate/763d836c18927e59bebd8cf25f966fe43b7ad7e6a1ed469efec374b2d1fb3b56-certificate.pem.crt',
+        caPath: './aws_certificate/AmazonRootCA1.pem',
         clientId: process.env.AWS_IOT_THING_NAME || 'webdashboard-client',
         host: process.env.AWS_IOT_ENDPOINT,
         region: process.env.AWS_REGION
