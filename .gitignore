@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+server/node_modules/
+
+# Packaged backend files
+server.zip
+server.tar.gz
+server/server.zip
+
+# AWS Certificate folder
+aws_certificate/
